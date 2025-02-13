@@ -1,0 +1,23 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="container text-center">
+  <h1 class="fw-bold my-5">Projects</h1>
+  <div class="row g-4">
+
+    {% for project in site.projects %}
+      <div class="col-md-4">
+        <div class="card shadow-lg border-0">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">{{ project.title }}</h5>
+            <p class="card-text text-muted">{{ project.description }}</p>
+            <a href="{{ project.link }}" class="btn btn-outline-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>

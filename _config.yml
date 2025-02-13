@@ -1,0 +1,35 @@
+# Site Information
+title: Raju's Hub
+author: Raju Kumar
+email: rajukumardalimss@gmail.com
+description: >
+  Welcome to Raju's Hub! Explore AI projects, research, and insights on Data Science and Machine Learning.
+
+# Site URL (change this if using a custom domain)
+baseurl: ""  
+url: "https://rajukumar077.github.io"
+
+# Navigation Links (optional)
+header_pages:
+  - index.md
+  - projects.md
+  - certificates.md
+  - blog.md
+  - about.md
+
+# Social Media
+github_username: RajuKumar077
+linkedin_username: raju-kumar7388
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Theme (we will add custom styles later)
+
+theme: minima
+collections:
+  projects:
+    output: true
+

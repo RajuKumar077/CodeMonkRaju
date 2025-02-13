@@ -1,0 +1,21 @@
+# This is how Jekyll knows to use this theme.
+remote_theme: tedivm/jekyll-theme-portfolio
+
+title: Raju's Hub
+author: Raju Kumar
+email: rajukumardalimss@gmail.com  
+description: >
+  Welcome to Raju's Hub! Explore AI projects, research, and insights on Data Science and Machine Learning.
+
+# Header Links - all optional. If set, these create header links.
+homepage: https://rajukumar077.github.io/DataMonkRaju.github.io/
+twitter_username:  # Add if you have a Twitter handle
+github_username: RajuKumar077
+linkedin_username: raju-kumar7388
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-remote-theme # Lets us test remote themes locally.
+
+
