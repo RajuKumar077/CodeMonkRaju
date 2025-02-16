@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} | Raju's Hub</title>
     
-    <!-- Bootstrap CSS (for styling) -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="{{ '/' | relative_url }}">Raju's Hub</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -29,6 +32,8 @@
                     <li class="nav-item"><a class="nav-link" href="{{ '/blog' | relative_url }}">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ '/contact' | relative_url }}">Contact</a></li>
                 </ul>
+                <!-- Dark Mode Toggle -->
+                <button id="theme-toggle" class="btn btn-outline-dark ms-3">🌙</button>
             </div>
         </div>
     </nav>
@@ -40,11 +45,18 @@
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-light">
-        <p class="mb-0">&copy; 2024 Raju Kumar | <a href="https://github.com/RajuKumar077">GitHub</a></p>
+        <p class="mb-0">&copy; 2024 Raju Kumar | 
+            <a href="https://github.com/RajuKumar077" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Custom JS -->
+<script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+
 
 </body>
 </html>

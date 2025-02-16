@@ -1,53 +1,68 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raju's Portfolio</title>
+    
+    <!-- External CSS & JS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
 
-<div class="container text-center mt-5">
-    <h1 class="display-4">Welcome to Raju's Hub</h1>
-    <p class="lead">Explore AI | ML | Data Science | Innovation</p>
+    <!-- Background Matrix Effect -->
+    <canvas id="matrixCanvas"></canvas>
 
-    <hr class="my-4">
+    <!-- Navigation -->
+    <header>
+        <nav class="glow-effect">
+            <div class="logo">Raju</div>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
 
-    <h2 class="fw-bold">Featured Projects</h2>
-    <div class="row g-4 mt-3">
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing my skills, projects, and achievements.</p>
+    </section>
 
-        <!-- Project 1 -->
-        <div class="col-md-4">
-            <div class="card shadow-lg border-0">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">SecurePay</h5>
-                    <p class="card-text text-muted">A fraud detection model with a 97.4% AUC score.</p>
-                    <a href="/projects/securepay.html" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">SecurePay: Fraud Detection</div>
+            <div class="card">E-commerce Product Categorization</div>
+            <div class="card">Stock Price Prediction</div>
         </div>
+    </section>
 
-        <!-- Project 2 -->
-        <div class="col-md-4">
-            <div class="card shadow-lg border-0">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">AI Text Classifier</h5>
-                    <p class="card-text text-muted">Advanced multi-class text classification model.</p>
-                    <a href="/projects/text-classifier.html" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="grid">
+            <div class="card">Data Scientist Bootcamp - upGrad</div>
+            <div class="card">AI/ML Engineer Course</div>
         </div>
+    </section>
 
-        <!-- Project 3 -->
-        <div class="col-md-4">
-            <div class="card shadow-lg border-0">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">Jarvis AI</h5>
-                    <p class="card-text text-muted">Personal AI assistant with advanced NLP.</p>
-                    <a href="/projects/jarvis.html" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate AI/ML Engineer with a focus on building intelligent solutions.</p>
+    </section>
+
+    <!-- Moving Car Animation -->
+    <div class="car">
+        <img src="assets/images/car.png" alt="Moving Car">
     </div>
 
-    <!-- View All Projects Button -->
-    <div class="text-center my-4">
-        <a href="/projects.html" class="btn btn-primary btn-lg">View All Projects</a>
-    </div>
-</div>
+</body>
+</html>
+
