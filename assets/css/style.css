@@ -177,3 +177,38 @@ section {
     pointer-events: none;
     z-index: -1;
 }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.car {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: moveCar 5s linear infinite;
+}
+@keyframes moveCar {
+    0% { right: -100px; }
+    100% { right: 100vw; }
+}
